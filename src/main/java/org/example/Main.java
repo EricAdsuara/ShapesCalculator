@@ -15,6 +15,12 @@ public class Main {
 
             System.out.print("Should the shape be filled? (true/false): ");
             boolean filled = scanner.nextBoolean();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter side: ");
+                    new Square(scanner.nextDouble(), filled).displayInfo();
+                    break;
         }
     }
 }
