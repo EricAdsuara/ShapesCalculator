@@ -22,3 +22,5 @@ public class Ellipse {
             this.semiMajorAxis = 1.0;
             return;
         }
+        this.semiMajorAxis = a;
+    }
