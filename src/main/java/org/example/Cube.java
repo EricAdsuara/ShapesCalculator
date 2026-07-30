@@ -18,6 +18,8 @@ public class Cube {
             this.side = 1.0;
             return;
         }
-
         this.side = side;
     }
+
+    public double calculateSurfaceArea() { return 6 * side * side; }
+    public double calculateVolume() { return Math.pow(side, 3); }
