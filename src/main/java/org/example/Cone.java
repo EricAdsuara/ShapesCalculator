@@ -45,3 +45,12 @@ public class Cone {
     public double calculateVolume() {
         return (1.0 / 3.0) * Math.PI * radius * radius * height;
     }
+
+    public void displayInfo() {
+        System.out.println("\n--- Cone Info ---");
+        System.out.println("Radius: " + radius + ", Height: " + height);
+        System.out.println("Slant Height (l): " + calculateSlantHeight());
+        System.out.println("Surface Area: " + calculateSurfaceArea());
+        System.out.println("Volume: " + calculateVolume());
+    }
+}
