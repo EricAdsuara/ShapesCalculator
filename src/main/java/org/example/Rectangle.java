@@ -54,4 +54,6 @@ public class Rectangle {
             for (int j = 0; j < cols; j++) {
                 if (filled || i == 0 || i == rows - 1 || j == 0 || j == cols - 1) {
                     System.out.print("* ");
+                } else {
+                    System.out.print("  ");
                 }
