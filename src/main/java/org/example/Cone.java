@@ -7,3 +7,8 @@ public class Cone {
     public Cone() {
         this(1.0, 2.0);
     }
+
+    public Cone(double radius, double height) {
+        setRadius(radius);
+        setHeight(height);
+    }
