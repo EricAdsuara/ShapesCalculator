@@ -44,3 +44,7 @@ public class Cuboid {
         }
         this.height = height;
     }
+
+    public double calculateSurfaceArea() {
+        return 2 * (length * width + width * height + length * height);
+    }
