@@ -30,3 +30,6 @@ public class Ellipse {
             System.out.println("[Error] Minor axis must be positive. Defaulting to 1.0.");
             this.semiMinorAxis = 1.0;
             return;
+        }
+        this.semiMinorAxis = b;
+    }
