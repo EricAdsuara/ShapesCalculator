@@ -33,3 +33,5 @@ public class Ellipse {
         }
         this.semiMinorAxis = b;
     }
+    public boolean isFilled() { return filled; }
+    public void setFilled(boolean filled) { this.filled = filled; }
