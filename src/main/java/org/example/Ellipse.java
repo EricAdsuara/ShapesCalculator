@@ -43,3 +43,11 @@ public class Ellipse {
         double b = semiMinorAxis;
         return Math.PI * (3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)));
     }
+
+    public void displayInfo() {
+        System.out.println("\n--- Ellipse Info ---");
+        System.out.println("Semi-Major Axis: " + semiMajorAxis + ", Semi-Minor Axis: " + semiMinorAxis);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Approx. Perimeter: " + calculatePerimeter());
+        draw();
+    }
