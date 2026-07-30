@@ -24,3 +24,6 @@ public class Circle {
     }
     public boolean isFilled() { return filled; }
     public void setFilled(boolean filled) { this.filled = filled; }
+
+    public double calculateArea() { return Math.PI * radius * radius; }
+    public double calculatePerimeter() { return 2 * Math.PI * radius; }
