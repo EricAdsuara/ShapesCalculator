@@ -33,3 +33,5 @@ public class Triangle {
     }
     public boolean isFilled() { return filled; }
     public void setFilled(boolean filled) { this.filled = filled; }
+
+    public double calculatePerimeter() { return sideA + sideB + sideC; }
