@@ -23,7 +23,7 @@ public class Square {
     }
 
     public boolean isFilled() {return filled; }
-    public void setFilled(boolean filled) {this.filled = filled; }
+    public void stFilled(boolean filled) {this.filled = filled; }
 
     public double calculateArea() { return side * side; }
     public double calculatePerimeter() {return 4 * side; }
