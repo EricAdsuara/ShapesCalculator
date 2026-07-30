@@ -26,7 +26,8 @@ public class Main {
                     System.out.print("Enter length: ");
                     double l = scanner.nextDouble();
                     System.out.print("Enter width: ");
-                    new Rectangle(l, scanner.nextDouble(), filled).displayInfo();
+                    double w = scanner.nextDouble();
+                    new Rectangle(l, w, filled).displayInfo();
                     break;
                 case 3:
                     System.out.print("Enter radius: ");
