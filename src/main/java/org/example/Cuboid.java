@@ -48,3 +48,7 @@ public class Cuboid {
     public double calculateSurfaceArea() {
         return 2 * (length * width + width * height + length * height);
     }
+
+    public double calculateVolume() {
+        return length * width * height;
+    }
