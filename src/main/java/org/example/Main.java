@@ -26,11 +26,12 @@ public class Main {
                 new Square(scanner.nextDouble(), f1).displayInfo();
                 break;
                 case 2:
+                    System.out.print("Should it be filled? (true/false): ");
+                    boolean f2 = scanner.nextBoolean();
                     System.out.print("Enter length: ");
                     double l = scanner.nextDouble();
                     System.out.print("Enter width: ");
-                    double w = scanner.nextDouble();
-                    new Rectangle(l, w, filled).displayInfo();
+                    new Rectangle(l, scanner.nextDouble(), f2).displayInfo();
                     break;
                 case 3:
                     System.out.print("Enter radius: ");
