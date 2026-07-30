@@ -31,7 +31,7 @@ public class Square {
 
     public void displayInfo() {
         System.out.println("Display:");
-        int size = 5;
+        int size = (int) side;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (filled || i == 0 || i == size - 1 || j == 0 || j == size - 1) {
