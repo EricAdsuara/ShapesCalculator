@@ -34,8 +34,10 @@ public class Main {
                     new Rectangle(l, scanner.nextDouble(), f2).displayInfo();
                     break;
                 case 3:
+                    System.out.print("Should it be filled? (true/false): ");
+                    boolean f3 = scanner.nextBoolean();
                     System.out.print("Enter radius: ");
-                    new Circle(scanner.nextDouble(), filled).displayInfo();
+                    new Circle(scanner.nextDouble(), f3).displayInfo();
                     break;
                 case 4:
                     System.out.print("Enter semi-major axis: ");
