@@ -23,3 +23,11 @@ public class Sphere {
 
     public double calculateSurfaceArea() { return 4 * Math.PI * radius * radius; }
     public double calculateVolume() { return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3); }
+
+    public void displayInfo() {
+        System.out.println("\n--- Sphere Info ---");
+        System.out.println("Radius: " + radius);
+        System.out.println("Surface Area: " + calculateSurfaceArea());
+        System.out.println("Volume: " + calculateVolume());
+    }
+}
