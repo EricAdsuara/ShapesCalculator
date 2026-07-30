@@ -46,3 +46,12 @@ public class Rectangle {
         System.out.println("Perimeter: " + calculatePerimeter());
         draw();
     }
+
+    public void draw() {
+        System.out.println("Display:");
+        int rows = 3, cols = 6;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (filled || i == 0 || i == rows - 1 || j == 0 || j == cols - 1) {
+                    System.out.print("* ");
+                }
