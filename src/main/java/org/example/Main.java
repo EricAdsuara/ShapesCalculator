@@ -1,21 +1,22 @@
 package org.example;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner (System.in);
+        Scanner scanner = new Scanner(System.in);
         int choice;
 
         do {
-            System.out.println("\n=== 2D SHAPES CALCULATOR ===");
-            System.out.println("1. Square\n2. Rectangle\n3. Circle\n4. Ellipse\n5. Triangle\n6. Exit");
-            System.out.print("Select an option (1-6): ");
+            System.out.println("\n=== GEOMETRY CALCULATOR (2D + 3D) ===");
+            System.out.println("1. Square        2. Rectangle    3. Circle");
+            System.out.println("4. Ellipse       5. Triangle     6. Cube");
+            System.out.println("7. Cuboid        8. Sphere       9. Cone");
+            System.out.println("10. Cylinder    11. Exit");
+            System.out.print("Select an option (1-11): ");
 
             choice = scanner.nextInt();
-            if (choice == 6) break;
-
-            System.out.print("Should the shape be filled? (true/false): ");
-            boolean filled = scanner.nextBoolean();
+            if (choice == 11) break;
 
             switch (choice) {
                 case 1:
