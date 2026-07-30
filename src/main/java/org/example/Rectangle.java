@@ -35,3 +35,6 @@ public class Rectangle {
 
     public boolean isFilled() { return filled; }
     public void setFilled(boolean filled) { this.filled = filled; }
+
+    public double calculateArea() { return length * width; }
+    public double calculatePerimeter() { return 2 * (length + width); }
