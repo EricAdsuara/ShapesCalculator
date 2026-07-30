@@ -32,3 +32,6 @@ public class Rectangle {
         }
         this.width = width;
     }
+
+    public boolean isFilled() { return filled; }
+    public void setFilled(boolean filled) { this.filled = filled; }
