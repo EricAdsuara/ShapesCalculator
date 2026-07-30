@@ -40,10 +40,12 @@ public class Main {
                     new Circle(scanner.nextDouble(), f3).displayInfo();
                     break;
                 case 4:
+                    System.out.print("Should it be filled? (true/false): ");
+                    boolean f4 = scanner.nextBoolean();
                     System.out.print("Enter semi-major axis: ");
                     double ma = scanner.nextDouble();
                     System.out.print("Enter semi-minor axis: ");
-                    new Ellipse(ma, scanner.nextDouble(), filled).displayInfo();
+                    new Ellipse(ma, scanner.nextDouble(), f4).displayInfo();
                     break;
                 case 5:
                     System.out.print("Enter side A, B, C: ");
