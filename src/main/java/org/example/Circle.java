@@ -43,3 +43,5 @@ public class Circle {
         } else {
             System.out.println("  ***  \n *   * \n*     *\n *   * \n  ***  ");
         }
+    }
+}
