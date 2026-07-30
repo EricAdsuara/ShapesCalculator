@@ -23,3 +23,10 @@ public class Rectangle {
         }
         this.length = length;
     }
+    public double getWidth() { return width; }
+    public void setWidth(double width) {
+        if (width <= 0) {
+            System.out.println("[Error] Width must be positive. Defaulting to 1.0.");
+            this.width = 1.0;
+            return;
+        }
