@@ -31,3 +31,5 @@ public class Triangle {
         this.sideB = b;
         this.sideC = c;
     }
+    public boolean isFilled() { return filled; }
+    public void setFilled(boolean filled) { this.filled = filled; }
