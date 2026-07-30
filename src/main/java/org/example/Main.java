@@ -37,6 +37,10 @@ public class Main {
                     System.out.print("Enter semi-minor axis: ");
                     new Ellipse(ma, scanner.nextDouble(), filled).displayInfo();
                     break;
+                case 5:
+                    System.out.print("Enter side A, B, C: ");
+                    new Triangle(scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble(), filled).displayInfo();
+                    break;
         }
     }
 }
