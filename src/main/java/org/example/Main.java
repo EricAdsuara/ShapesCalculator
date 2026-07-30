@@ -57,6 +57,10 @@ public class Main {
                     System.out.print("Enter side C: ");
                     new Triangle(sa, sb, scanner.nextDouble(), f5).displayInfo();
                     break;
+                case 6:
+                    System.out.print("Enter cube side: ");
+                    new Cube(scanner.nextDouble()).displayInfo();
+                    break;
                 default:
                     System.out.println("Invalid choice!");
             }
