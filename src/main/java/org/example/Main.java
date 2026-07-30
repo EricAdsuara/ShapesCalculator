@@ -69,6 +69,10 @@ public class Main {
                     System.out.print("Enter height: ");
                     new Cuboid(cl, cw, scanner.nextDouble()).displayInfo();
                     break;
+                case 8:
+                    System.out.print("Enter sphere radius: ");
+                    new Sphere(scanner.nextDouble()).displayInfo();
+                    break;
                 default:
                     System.out.println("Invalid choice!");
             }
