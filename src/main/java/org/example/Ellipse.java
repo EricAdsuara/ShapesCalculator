@@ -35,3 +35,5 @@ public class Ellipse {
     }
     public boolean isFilled() { return filled; }
     public void setFilled(boolean filled) { this.filled = filled; }
+
+    public double calculateArea() { return Math.PI * semiMajorAxis * semiMinorAxis; }
