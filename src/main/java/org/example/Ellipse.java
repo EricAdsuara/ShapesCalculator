@@ -37,3 +37,9 @@ public class Ellipse {
     public void setFilled(boolean filled) { this.filled = filled; }
 
     public double calculateArea() { return Math.PI * semiMajorAxis * semiMinorAxis; }
+
+    public double calculatePerimeter() {
+        double a = semiMajorAxis;
+        double b = semiMinorAxis;
+        return Math.PI * (3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)));
+    }
