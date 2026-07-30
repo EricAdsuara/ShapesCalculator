@@ -12,6 +12,9 @@ public class Main {
 
             choice = scanner.nextInt();
             if (choice == 6) break;
+
+            System.out.print("Should the shape be filled? (true/false): ");
+            boolean filled = scanner.nextBoolean();
         }
     }
 }
