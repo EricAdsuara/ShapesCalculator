@@ -7,3 +7,8 @@ public class Cylinder {
     public Cylinder() {
         this(1.0, 2.0);
     }
+
+    public Cylinder(double radius, double height) {
+        setRadius(radius);
+        setHeight(height);
+    }
