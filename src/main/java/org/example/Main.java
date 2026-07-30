@@ -41,6 +41,13 @@ public class Main {
                     System.out.print("Enter side A, B, C: ");
                     new Triangle(scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble(), filled).displayInfo();
                     break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        } while (choice != 6);
+
+        System.out.println("Exiting application.");
+        scanner.close();
         }
     }
 }
