@@ -52,3 +52,11 @@ public class Cuboid {
     public double calculateVolume() {
         return length * width * height;
     }
+
+    public void displayInfo() {
+        System.out.println("\n--- Cuboid Info ---");
+        System.out.println("Dimensions: " + length + " x " + width + " x " + height);
+        System.out.println("Surface Area: " + calculateSurfaceArea());
+        System.out.println("Volume: " + calculateVolume());
+    }
+}
