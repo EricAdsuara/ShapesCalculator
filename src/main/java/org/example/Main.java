@@ -61,6 +61,14 @@ public class Main {
                     System.out.print("Enter cube side: ");
                     new Cube(scanner.nextDouble()).displayInfo();
                     break;
+                case 7:
+                    System.out.print("Enter length: ");
+                    double cl = scanner.nextDouble();
+                    System.out.print("Enter width: ");
+                    double cw = scanner.nextDouble();
+                    System.out.print("Enter height: ");
+                    new Cuboid(cl, cw, scanner.nextDouble()).displayInfo();
+                    break;
                 default:
                     System.out.println("Invalid choice!");
             }
