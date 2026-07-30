@@ -51,3 +51,9 @@ public class Ellipse {
         System.out.println("Approx. Perimeter: " + calculatePerimeter());
         draw();
     }
+
+    public void draw() {
+        System.out.println("Display:");
+        if (filled) {
+            System.out.println("  *****  \n ******* \n  *****  ");
+        }
