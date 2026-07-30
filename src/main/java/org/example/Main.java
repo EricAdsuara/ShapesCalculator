@@ -16,7 +16,6 @@ public class Main {
             System.out.print("Select an option (1-11): ");
 
             choice = scanner.nextInt();
-            if (choice == 11) break;
 
             switch (choice) {
                 case 1:
@@ -84,6 +83,8 @@ public class Main {
                     double cylR = scanner.nextDouble();
                     System.out.print("Enter cylinder height: ");
                     new Cylinder(cylR, scanner.nextDouble()).displayInfo();
+                    break;
+                case 11:
                     break;
                 default:
                     System.out.println("Invalid choice!");
