@@ -15,7 +15,10 @@ public class Ellipse {
         this.filled = filled;
     }
 
-    public double getSemiMajorAxis() { return semiMajorAxis; }
+    public double getSemiMajorAxis() {
+        return semiMajorAxis;
+    }
+
     public void setSemiMajorAxis(double a) {
         if (a <= 0) {
             System.out.println("[Error] Major axis must be positive. Defaulting to 1.0.");
@@ -24,7 +27,11 @@ public class Ellipse {
         }
         this.semiMajorAxis = a;
     }
-    public double getSemiMinorAxis() { return semiMinorAxis; }
+
+    public double getSemiMinorAxis() {
+        return semiMinorAxis;
+    }
+
     public void setSemiMinorAxis(double b) {
         if (b <= 0) {
             System.out.println("[Error] Minor axis must be positive. Defaulting to 1.0.");
@@ -33,10 +40,18 @@ public class Ellipse {
         }
         this.semiMinorAxis = b;
     }
-    public boolean isFilled() { return filled; }
-    public void setFilled(boolean filled) { this.filled = filled; }
 
-    public double calculateArea() { return Math.PI * semiMajorAxis * semiMinorAxis; }
+    public boolean isFilled() {
+        return filled;
+    }
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
+
+    public double calculateArea() {
+        return Math.PI * semiMajorAxis * semiMinorAxis;
+    }
 
     public double calculatePerimeter() {
         double a = semiMajorAxis;
@@ -60,3 +75,4 @@ public class Ellipse {
             System.out.println("  *****  \n *     * \n  *****  ");
         }
     }
+}
