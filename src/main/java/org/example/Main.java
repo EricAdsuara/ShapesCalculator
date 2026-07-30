@@ -79,6 +79,12 @@ public class Main {
                     System.out.print("Enter cone height: ");
                     new Cone(cr, scanner.nextDouble()).displayInfo();
                     break;
+                case 10:
+                    System.out.print("Enter cylinder radius: ");
+                    double cylR = scanner.nextDouble();
+                    System.out.print("Enter cylinder height: ");
+                    new Cylinder(cylR, scanner.nextDouble()).displayInfo();
+                    break;
                 default:
                     System.out.println("Invalid choice!");
             }
