@@ -38,3 +38,11 @@ public class Rectangle {
 
     public double calculateArea() { return length * width; }
     public double calculatePerimeter() { return 2 * (length + width); }
+
+    public void displayInfo() {
+        System.out.println("\n--- Rectangle Info ---");
+        System.out.println("Length: " + length + ", Width: " + width);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Perimeter: " + calculatePerimeter());
+        draw();
+    }
