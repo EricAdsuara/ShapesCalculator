@@ -27,3 +27,7 @@ public class Triangle {
             this.sideC = 5.0;
             return;
         }
+        this.sideA = a;
+        this.sideB = b;
+        this.sideC = c;
+    }
