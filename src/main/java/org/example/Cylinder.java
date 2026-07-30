@@ -33,3 +33,7 @@ public class Cylinder {
         }
         this.height = height;
     }
+
+    public double calculateSurfaceArea() {
+        return 2 * Math.PI * radius * (radius + height);
+    }
