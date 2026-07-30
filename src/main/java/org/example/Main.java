@@ -88,9 +88,9 @@ public class Main {
                 default:
                     System.out.println("Invalid choice!");
             }
-        } while (choice != 6);
+        } while (choice != 11);
 
         System.out.println("Exiting application.");
         scanner.close();
-        }
     }
+}
