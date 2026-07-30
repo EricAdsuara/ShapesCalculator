@@ -10,7 +10,8 @@ public class Main {
             System.out.println("1. Square\n2. Rectangle\n3. Circle\n4. Ellipse\n5. Triangle\n6. Exit");
             Sytem.out.print("Select an option (1-6) ");
 
-            choice = scanner.ne
+            choice = scanner.nextInt();
+            if (choice == 6) break;
         }
     }
 }
