@@ -20,3 +20,5 @@ public class Circle {
             this.radius = 1.0;
             return;
         }
+        this.radius = radius;
+    }
