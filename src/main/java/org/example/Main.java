@@ -21,6 +21,12 @@ public class Main {
                     System.out.print("Enter side: ");
                     new Square(scanner.nextDouble(), filled).displayInfo();
                     break;
+                case 2:
+                    System.out.print("Enter length: ");
+                    double l = scanner.nextDouble();
+                    System.out.print("Enter width: ");
+                    new Rectangle(l, scanner.nextDouble(), filled).displayInfo();
+                    break;
         }
     }
 }
