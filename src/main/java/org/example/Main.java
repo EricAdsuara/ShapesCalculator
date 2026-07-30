@@ -48,8 +48,14 @@ public class Main {
                     new Ellipse(ma, scanner.nextDouble(), f4).displayInfo();
                     break;
                 case 5:
-                    System.out.print("Enter side A, B, C: ");
-                    new Triangle(scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble(), filled).displayInfo();
+                    System.out.print("Should it be filled? (true/false): ");
+                    boolean f5 = scanner.nextBoolean();
+                    System.out.print("Enter side A: ");
+                    double sa = scanner.nextDouble();
+                    System.out.print("Enter side B: ");
+                    double sb = scanner.nextDouble();
+                    System.out.print("Enter side C: ");
+                    new Triangle(sa, sb, scanner.nextDouble(), f5).displayInfo();
                     break;
                 default:
                     System.out.println("Invalid choice!");
