@@ -24,3 +24,9 @@ public class Ellipse {
         }
         this.semiMajorAxis = a;
     }
+    public double getSemiMinorAxis() { return semiMinorAxis; }
+    public void setSemiMinorAxis(double b) {
+        if (b <= 0) {
+            System.out.println("[Error] Minor axis must be positive. Defaulting to 1.0.");
+            this.semiMinorAxis = 1.0;
+            return;
