@@ -41,3 +41,11 @@ public class Cylinder {
     public double calculateVolume() {
         return Math.PI * radius * radius * height;
     }
+
+    public void displayInfo() {
+        System.out.println("\n--- Cylinder Info ---");
+        System.out.println("Radius: " + radius + ", Height: " + height);
+        System.out.println("Surface Area: " + calculateSurfaceArea());
+        System.out.println("Volume: " + calculateVolume());
+    }
+}
