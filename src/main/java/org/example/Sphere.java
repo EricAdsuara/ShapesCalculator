@@ -6,3 +6,7 @@ public class Sphere {
     public Sphere() {
         this(1.0);
     }
+
+    public Sphere(double radius) {
+        setRadius(radius);
+    }
