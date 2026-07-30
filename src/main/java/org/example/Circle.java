@@ -40,4 +40,6 @@ public class Circle {
         System.out.println("Display:");
         if (filled) {
             System.out.println("  ***  \n ***** \n*******\n ***** \n  ***  ");
+        } else {
+            System.out.println("  ***  \n *   * \n*     *\n *   * \n  ***  ");
         }
