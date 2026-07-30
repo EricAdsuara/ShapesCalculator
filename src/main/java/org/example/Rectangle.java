@@ -30,3 +30,5 @@ public class Rectangle {
             this.width = 1.0;
             return;
         }
+        this.width = width;
+    }
