@@ -40,3 +40,11 @@ public class Triangle {
         double s = calculatePerimeter() / 2.0;
         return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
     }
+
+    public void displayInfo() {
+        System.out.println("\n--- Triangle Info ---");
+        System.out.println("Sides: " + sideA + ", " + sideB + ", " + sideC);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Perimeter: " + calculatePerimeter());
+        draw();
+    }
