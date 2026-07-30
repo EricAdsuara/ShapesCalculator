@@ -27,3 +27,11 @@ public class Circle {
 
     public double calculateArea() { return Math.PI * radius * radius; }
     public double calculatePerimeter() { return 2 * Math.PI * radius; }
+
+    public void displayInfo() {
+        System.out.println("\n--- Circle Info ---");
+        System.out.println("Radius: " + radius);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Perimeter: " + calculatePerimeter());
+        draw();
+    }
