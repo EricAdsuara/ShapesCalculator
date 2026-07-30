@@ -48,3 +48,9 @@ public class Triangle {
         System.out.println("Perimeter: " + calculatePerimeter());
         draw();
     }
+
+    public void draw() {
+        System.out.println("Display:");
+        if (filled) {
+            System.out.println("   *   \n  ***  \n ***** \n*******");
+        }
