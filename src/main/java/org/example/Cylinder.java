@@ -20,3 +20,16 @@ public class Cylinder {
             this.radius = 1.0;
             return;
         }
+
+        this.radius = radius;
+    }
+
+    public double getHeight() { return height; }
+    public void setHeight(double height) {
+        if (height <= 0) {
+            System.out.println("[Error] Height must be positive. Defaulting to 1.0.");
+            this.height = 1.0;
+            return;
+        }
+        this.height = height;
+    }
