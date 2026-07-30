@@ -14,3 +14,7 @@ public class Triangle {
         setSides(a, b, c);
         this.filled = filled;
     }
+
+    public double getSideA() { return sideA; }
+    public double getSideB() { return sideB; }
+    public double getSideC() { return sideC; }
