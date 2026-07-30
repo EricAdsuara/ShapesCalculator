@@ -32,3 +32,7 @@ public class Cone {
         }
         this.height = height;
     }
+
+    public double calculateSlantHeight() {
+        return Math.sqrt(radius * radius + height * height);
+    }
