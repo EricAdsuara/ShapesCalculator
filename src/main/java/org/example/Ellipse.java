@@ -14,3 +14,11 @@ public class Ellipse {
         setSemiMinorAxis(semiMinorAxis);
         this.filled = filled;
     }
+
+    public double getSemiMajorAxis() { return semiMajorAxis; }
+    public void setSemiMajorAxis(double a) {
+        if (a <= 0) {
+            System.out.println("[Error] Major axis must be positive. Defaulting to 1.0.");
+            this.semiMajorAxis = 1.0;
+            return;
+        }
