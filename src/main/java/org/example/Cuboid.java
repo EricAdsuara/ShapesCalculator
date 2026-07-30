@@ -14,3 +14,11 @@ public class Cuboid {
         setWidth(width);
         setHeight(height);
     }
+
+    public double getLength() { return length; }
+    public void setLength(double length) {
+        if (length <= 0) {
+            System.out.println("[Error] Length must be positive. Defaulting to 1.0.");
+            this.length = 1.0;
+            return;
+        }
