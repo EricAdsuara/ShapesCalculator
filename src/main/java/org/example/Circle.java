@@ -7,3 +7,8 @@ public class Circle {
     public Circle() {
         this(1.0, true);
     }
+
+    public Circle(double radius, boolean filled) {
+        setRadius(radius);
+        this.filled = filled;
+    }
