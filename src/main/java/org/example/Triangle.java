@@ -35,3 +35,8 @@ public class Triangle {
     public void setFilled(boolean filled) { this.filled = filled; }
 
     public double calculatePerimeter() { return sideA + sideB + sideC; }
+
+    public double calculateArea() {
+        double s = calculatePerimeter() / 2.0;
+        return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+    }
