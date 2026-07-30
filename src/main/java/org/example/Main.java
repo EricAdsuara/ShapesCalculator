@@ -73,6 +73,12 @@ public class Main {
                     System.out.print("Enter sphere radius: ");
                     new Sphere(scanner.nextDouble()).displayInfo();
                     break;
+                case 9:
+                    System.out.print("Enter cone radius: ");
+                    double cr = scanner.nextDouble();
+                    System.out.print("Enter cone height: ");
+                    new Cone(cr, scanner.nextDouble()).displayInfo();
+                    break;
                 default:
                     System.out.println("Invalid choice!");
             }
