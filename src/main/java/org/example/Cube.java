@@ -23,3 +23,11 @@ public class Cube {
 
     public double calculateSurfaceArea() { return 6 * side * side; }
     public double calculateVolume() { return Math.pow(side, 3); }
+
+    public void displayInfo() {
+        System.out.println("\n--- Cube Info ---");
+        System.out.println("Side: " + side);
+        System.out.println("Surface Area: " + calculateSurfaceArea());
+        System.out.println("Volume: " + calculateVolume());
+    }
+}
