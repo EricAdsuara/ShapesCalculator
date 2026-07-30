@@ -18,3 +18,6 @@ public class Cube {
             this.side = 1.0;
             return;
         }
+
+        this.side = side;
+    }
