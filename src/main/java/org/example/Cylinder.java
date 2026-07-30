@@ -37,3 +37,7 @@ public class Cylinder {
     public double calculateSurfaceArea() {
         return 2 * Math.PI * radius * (radius + height);
     }
+
+    public double calculateVolume() {
+        return Math.PI * radius * radius * height;
+    }
