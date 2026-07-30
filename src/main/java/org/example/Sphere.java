@@ -18,6 +18,8 @@ public class Sphere {
             this.radius = 1.0;
             return;
         }
-
         this.radius = radius;
     }
+
+    public double calculateSurfaceArea() { return 4 * Math.PI * radius * radius; }
+    public double calculateVolume() { return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3); }
