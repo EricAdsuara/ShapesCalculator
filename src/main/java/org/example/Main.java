@@ -31,6 +31,12 @@ public class Main {
                     System.out.print("Enter radius: ");
                     new Circle(scanner.nextDouble(), filled).displayInfo();
                     break;
+                case 4:
+                    System.out.print("Enter semi-major axis: ");
+                    double ma = scanner.nextDouble();
+                    System.out.print("Enter semi-minor axis: ");
+                    new Ellipse(ma, scanner.nextDouble(), filled).displayInfo();
+                    break;
         }
     }
 }
