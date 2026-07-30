@@ -36,3 +36,8 @@ public class Cone {
     public double calculateSlantHeight() {
         return Math.sqrt(radius * radius + height * height);
     }
+
+    public double calculateSurfaceArea() {
+        double l = calculateSlantHeight();
+        return Math.PI * radius * (radius + l);
+    }
