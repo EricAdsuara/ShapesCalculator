@@ -6,3 +6,7 @@ public class Cube {
     public Cube() {
         this(1.0);
     }
+
+    public Cube(double side) {
+        setSide(side);
+    }
