@@ -57,3 +57,8 @@ public class Rectangle {
                 } else {
                     System.out.print("  ");
                 }
+            }
+            System.out.println();
+        }
+    }
+}
