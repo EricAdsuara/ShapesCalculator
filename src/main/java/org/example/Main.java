@@ -27,6 +27,10 @@ public class Main {
                     System.out.print("Enter width: ");
                     new Rectangle(l, scanner.nextDouble(), filled).displayInfo();
                     break;
+                case 3:
+                    System.out.print("Enter radius: ");
+                    new Circle(scanner.nextDouble(), filled).displayInfo();
+                    break;
         }
     }
 }
