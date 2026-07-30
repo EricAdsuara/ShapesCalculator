@@ -41,3 +41,7 @@ public class Cone {
         double l = calculateSlantHeight();
         return Math.PI * radius * (radius + l);
     }
+
+    public double calculateVolume() {
+        return (1.0 / 3.0) * Math.PI * radius * radius * height;
+    }
