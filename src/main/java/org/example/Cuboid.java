@@ -22,3 +22,5 @@ public class Cuboid {
             this.length = 1.0;
             return;
         }
+        this.length = length;
+    }
