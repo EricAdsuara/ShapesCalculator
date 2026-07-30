@@ -56,4 +56,7 @@ public class Ellipse {
         System.out.println("Display:");
         if (filled) {
             System.out.println("  *****  \n ******* \n  *****  ");
+        } else {
+            System.out.println("  *****  \n *     * \n  *****  ");
         }
+    }
