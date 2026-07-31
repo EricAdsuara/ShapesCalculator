@@ -75,3 +75,4 @@ public class Ellipse {
             System.out.println("  *****  \n *     * \n  *****  ");
         }
     }
+}
