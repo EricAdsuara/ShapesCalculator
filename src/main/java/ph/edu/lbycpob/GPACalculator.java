@@ -16,3 +16,6 @@ public class GPACalculator {
             totalQualityPoints += course.getQualityPoints();
             totalUnits += course.getUnits();
         }
+
+        return totalUnits == 0 ? 0.0 : totalQualityPoints / totalUnits;
+    }
