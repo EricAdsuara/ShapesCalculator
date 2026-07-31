@@ -1,0 +1,14 @@
+package ph.edu.lbycpob;
+
+public class ReportGenerator {
+
+    public static void printStudentReport(Student student) {
+        System.out.println("==============================================");
+        System.out.println("            ACADEMIC GRADE REPORT             ");
+        System.out.println("==============================================");
+        System.out.println("Student ID   : " + student.getStudentId());
+        System.out.println("Student Name : " + student.getName());
+        System.out.println("----------------------------------------------");
+        System.out.printf("%-15s %-10s %-10s\n", "Course Code", "Units", "Grade");
+        System.out.println("----------------------------------------------");
+}
