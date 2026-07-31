@@ -44,4 +44,3 @@ public class Circle {
             System.out.println("  ***  \n *   * \n*     *\n *   * \n  ***  ");
         }
     }
-}
