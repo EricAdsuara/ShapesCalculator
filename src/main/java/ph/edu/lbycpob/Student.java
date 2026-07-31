@@ -14,12 +14,21 @@ public class Student {
         this.courses = new ArrayList<>();
     }
 
-    public String getStudentId() { return studentId; }
-    public String getName() { return name; }
-    public List<CourseGrade> getCourses() { return courses; }
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<CourseGrade> getCourses() {
+        return courses;
+    }
 
     public void addCourse(CourseGrade course) {
         if (course != null) {
             courses.add(course);
         }
     }
+}

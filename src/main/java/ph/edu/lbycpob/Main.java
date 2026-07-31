@@ -46,3 +46,4 @@ public class Main {
         ReportGenerator.printStudentReport(student);
         scanner.close();
     }
+}

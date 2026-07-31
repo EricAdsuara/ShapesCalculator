@@ -44,3 +44,4 @@ public class CourseGrade {
     public double getQualityPoints() {
         return units * gradePoint;
     }
+}

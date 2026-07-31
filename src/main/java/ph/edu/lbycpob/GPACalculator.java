@@ -27,3 +27,4 @@ public class GPACalculator {
         }
         return totalUnits;
     }
+}
