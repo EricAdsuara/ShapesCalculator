@@ -11,3 +11,8 @@ public class GradeValidator {
         }
         return false;
     }
+
+    public static boolean isValidUnits(double units) {
+        return units > 0 && units <= 12.0;
+    }
+}
