@@ -13,3 +13,11 @@ public class CourseGrade {
 
     public String getCourseCode() { return courseCode; }
     public void setCourseCode(String courseCode) { this.courseCode = courseCode; }
+
+    public double getUnits() { return units; }
+    public void setUnits(double units) {
+        if (units <= 0) {
+            throw new IllegalArgumentException("Units must be greater than 0.");
+        }
+        this.units = units;
+    }
