@@ -11,3 +11,8 @@ public class GPACalculator {
 
         double totalQualityPoints = 0.0;
         double totalUnits = 0.0;
+
+        for (CourseGrade course : courses) {
+            totalQualityPoints += course.getQualityPoints();
+            totalUnits += course.getUnits();
+        }
