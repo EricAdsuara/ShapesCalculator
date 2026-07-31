@@ -11,7 +11,10 @@ public class Cube {
         setSide(side);
     }
 
-    public double getSide() { return side; }
+    public double getSide() {
+        return side;
+    }
+
     public void setSide(double side) {
         if (side <= 0) {
             System.out.println("[Error] Side must be positive. Defaulting to 1.0.");
@@ -21,8 +24,13 @@ public class Cube {
         this.side = side;
     }
 
-    public double calculateSurfaceArea() { return 6 * side * side; }
-    public double calculateVolume() { return Math.pow(side, 3); }
+    public double calculateSurfaceArea() {
+        return 6 * side * side;
+    }
+
+    public double calculateVolume() {
+        return Math.pow(side, 3);
+    }
 
     public void displayInfo() {
         System.out.println("\n--- Cube Info ---");

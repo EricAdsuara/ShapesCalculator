@@ -13,7 +13,10 @@ public class Cone {
         setHeight(height);
     }
 
-    public double getRadius() { return radius; }
+    public double getRadius() {
+        return radius;
+    }
+
     public void setRadius(double radius) {
         if (radius <= 0) {
             System.out.println("[Error] Radius must be positive. Defaulting to 1.0.");
@@ -23,7 +26,10 @@ public class Cone {
         this.radius = radius;
     }
 
-    public double getHeight() { return height; }
+    public double getHeight() {
+        return height;
+    }
+
     public void setHeight(double height) {
         if (height <= 0) {
             System.out.println("[Error] Height must be positive. Defaulting to 1.0.");

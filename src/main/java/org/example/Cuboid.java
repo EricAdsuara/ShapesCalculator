@@ -15,7 +15,10 @@ public class Cuboid {
         setHeight(height);
     }
 
-    public double getLength() { return length; }
+    public double getLength() {
+        return length;
+    }
+
     public void setLength(double length) {
         if (length <= 0) {
             System.out.println("[Error] Length must be positive. Defaulting to 1.0.");
@@ -25,7 +28,10 @@ public class Cuboid {
         this.length = length;
     }
 
-    public double getWidth() { return width; }
+    public double getWidth() {
+        return width;
+    }
+
     public void setWidth(double width) {
         if (width <= 0) {
             System.out.println("[Error] Width must be positive. Defaulting to 1.0.");
@@ -35,7 +41,10 @@ public class Cuboid {
         this.width = width;
     }
 
-    public double getHeight() { return height; }
+    public double getHeight() {
+        return height;
+    }
+
     public void setHeight(double height) {
         if (height <= 0) {
             System.out.println("[Error] Height must be positive. Defaulting to 1.0.");
