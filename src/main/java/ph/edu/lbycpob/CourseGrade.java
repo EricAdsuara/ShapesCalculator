@@ -21,3 +21,11 @@ public class CourseGrade {
         }
         this.units = units;
     }
+
+    public double getGradePoint() { return gradePoint; }
+    public void setGradePoint(double gradePoint) {
+        if (!GradeValidator.isValidGradePoint(gradePoint)) {
+            throw new IllegalArgumentException("Invalid DLSU grade point value.");
+        }
+        this.gradePoint = gradePoint;
+    }
