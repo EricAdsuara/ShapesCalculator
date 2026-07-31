@@ -18,4 +18,7 @@ public class ReportGenerator {
                     course.getUnits(),
                     course.getGradePoint());
         }
+
+        double totalUnits = GPACalculator.calculateTotalUnits(student.getCourses());
+        double gpa = GPACalculator.calculateGPA(student.getCourses());
 }
