@@ -39,3 +39,11 @@ public class Main {
                     System.out.println("[Error] Invalid DLSU grade scale point.");
                 }
             } while (!GradeValidator.isValidGradePoint(grade));
+
+            student.addCourse(new CourseGrade(code, units, grade));
+        }
+
+        ReportGenerator.printStudentReport(student);
+        scanner.close();
+    }
+}
