@@ -13,3 +13,7 @@ public class Student {
         this.name = name;
         this.courses = new ArrayList<>();
     }
+
+    public String getStudentId() { return studentId; }
+    public String getName() { return name; }
+    public List<CourseGrade> getCourses() { return courses; }
