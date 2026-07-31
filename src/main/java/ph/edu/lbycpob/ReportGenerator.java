@@ -21,4 +21,10 @@ public class ReportGenerator {
 
         double totalUnits = GPACalculator.calculateTotalUnits(student.getCourses());
         double gpa = GPACalculator.calculateGPA(student.getCourses());
+
+        System.out.println("----------------------------------------------");
+        System.out.printf("Total Units Taken : %.1f\n", totalUnits);
+        System.out.printf("Cumulative GPA    : %.4f\n", gpa);
+        System.out.println("==============================================");
+    }
 }
