@@ -29,3 +29,8 @@ public class CourseGrade {
         }
         this.gradePoint = gradePoint;
     }
+
+    public double getQualityPoints() {
+        return units * gradePoint;
+    }
+}
