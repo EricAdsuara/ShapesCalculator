@@ -19,3 +19,12 @@ public class GPACalculator {
 
         return totalUnits == 0 ? 0.0 : totalQualityPoints / totalUnits;
     }
+
+    public static double calculateTotalUnits(List<CourseGrade> courses) {
+        double totalUnits = 0.0;
+        for (CourseGrade course : courses) {
+            totalUnits += course.getUnits();
+        }
+        return totalUnits;
+    }
+}
