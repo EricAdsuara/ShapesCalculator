@@ -11,3 +11,5 @@ public class Main {
         String id = scanner.nextLine();
         System.out.print("Enter Student Name: ");
         String name = scanner.nextLine();
+
+        Student student = new Student(id, name);
