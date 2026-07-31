@@ -21,3 +21,12 @@ public class Main {
             System.out.println("\nCourse " + (i + 1) + ":");
             System.out.print("Course Code: ");
             String code = scanner.next();
+
+            double units;
+            do {
+                System.out.print("Units (e.g. 3.0): ");
+                units = scanner.nextDouble();
+                if (!GradeValidator.isValidUnits(units)) {
+                    System.out.println("[Error] Invalid units. Must be > 0 and <= 12.");
+                }
+            } while (!GradeValidator.isValidUnits(units));
