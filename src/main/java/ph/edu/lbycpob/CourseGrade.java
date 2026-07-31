@@ -11,10 +11,18 @@ public class CourseGrade {
         setGradePoint(gradePoint);
     }
 
-    public String getCourseCode() { return courseCode; }
-    public void setCourseCode(String courseCode) { this.courseCode = courseCode; }
+    public String getCourseCode() {
+        return courseCode;
+    }
 
-    public double getUnits() { return units; }
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
+    public double getUnits() {
+        return units;
+    }
+
     public void setUnits(double units) {
         if (units <= 0) {
             throw new IllegalArgumentException("Units must be greater than 0.");
@@ -22,7 +30,10 @@ public class CourseGrade {
         this.units = units;
     }
 
-    public double getGradePoint() { return gradePoint; }
+    public double getGradePoint() {
+        return gradePoint;
+    }
+
     public void setGradePoint(double gradePoint) {
         if (!GradeValidator.isValidGradePoint(gradePoint)) {
             throw new IllegalArgumentException("Invalid DLSU grade point value.");

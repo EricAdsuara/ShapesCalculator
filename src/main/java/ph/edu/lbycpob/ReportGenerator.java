@@ -27,4 +27,4 @@ public class ReportGenerator {
         System.out.printf("Cumulative GPA    : %.4f\n", gpa);
         System.out.println("==============================================");
     }
-}
+

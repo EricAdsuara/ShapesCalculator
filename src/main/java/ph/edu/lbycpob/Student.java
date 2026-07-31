@@ -23,4 +23,3 @@ public class Student {
             courses.add(course);
         }
     }
-}
