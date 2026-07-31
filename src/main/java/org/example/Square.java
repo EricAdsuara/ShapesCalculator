@@ -3,7 +3,7 @@ public class Square {
     private double side;
     private boolean filled;
 
-    public Square(){
+    public Square() {
         this(1.0, true);
     }
 
@@ -12,7 +12,9 @@ public class Square {
         this.filled = filled;
     }
 
-    public double getSide() { return side; }
+    public double getSide() {
+        return side;
+    }
 
     public void setSide(double side) {
         if (side <= 0) {
@@ -23,11 +25,21 @@ public class Square {
         this.side = side;
     }
 
-    public boolean isFilled() {return filled; }
-    public void setFilled(boolean filled) {this.filled = filled; }
+    public boolean isFilled() {
+        return filled;
+    }
 
-    public double calculateArea() { return side * side; }
-    public double calculatePerimeter() {return 4 * side; }
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
+
+    public double calculateArea() {
+        return side * side;
+    }
+
+    public double calculatePerimeter() {
+        return 4 * side;
+    }
 
     public void displayInfo() {
         System.out.println("Display:");

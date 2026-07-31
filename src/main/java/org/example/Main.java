@@ -19,11 +19,11 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                System.out.print("Should it be filled? (true/false): ");
-                boolean f1 = scanner.nextBoolean();
-                System.out.print("Enter side: ");
-                new Square(scanner.nextDouble(), f1).displayInfo();
-                break;
+                    System.out.print("Should it be filled? (true/false): ");
+                    boolean f1 = scanner.nextBoolean();
+                    System.out.print("Enter side: ");
+                    new Square(scanner.nextDouble(), f1).displayInfo();
+                    break;
                 case 2:
                     System.out.print("Should it be filled? (true/false): ");
                     boolean f2 = scanner.nextBoolean();

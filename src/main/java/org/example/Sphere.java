@@ -11,7 +11,10 @@ public class Sphere {
         setRadius(radius);
     }
 
-    public double getRadius() { return radius; }
+    public double getRadius() {
+        return radius;
+    }
+
     public void setRadius(double radius) {
         if (radius <= 0) {
             System.out.println("[Error] Radius must be positive. Defaulting to 1.0.");
@@ -21,8 +24,13 @@ public class Sphere {
         this.radius = radius;
     }
 
-    public double calculateSurfaceArea() { return 4 * Math.PI * radius * radius; }
-    public double calculateVolume() { return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3); }
+    public double calculateSurfaceArea() {
+        return 4 * Math.PI * radius * radius;
+    }
+
+    public double calculateVolume() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    }
 
     public void displayInfo() {
         System.out.println("\n--- Sphere Info ---");

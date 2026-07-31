@@ -14,7 +14,10 @@ public class Rectangle {
         this.filled = filled;
     }
 
-    public double getLength() { return length; }
+    public double getLength() {
+        return length;
+    }
+
     public void setLength(double length) {
         if (length <= 0) {
             System.out.println("[Error] Length must be positive. Defaulting to 1.0.");
@@ -23,7 +26,11 @@ public class Rectangle {
         }
         this.length = length;
     }
-    public double getWidth() { return width; }
+
+    public double getWidth() {
+        return width;
+    }
+
     public void setWidth(double width) {
         if (width <= 0) {
             System.out.println("[Error] Width must be positive. Defaulting to 1.0.");
@@ -33,11 +40,21 @@ public class Rectangle {
         this.width = width;
     }
 
-    public boolean isFilled() { return filled; }
-    public void setFilled(boolean filled) { this.filled = filled; }
+    public boolean isFilled() {
+        return filled;
+    }
 
-    public double calculateArea() { return length * width; }
-    public double calculatePerimeter() { return 2 * (length + width); }
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
+
+    public double calculateArea() {
+        return length * width;
+    }
+
+    public double calculatePerimeter() {
+        return 2 * (length + width);
+    }
 
     public void displayInfo() {
         System.out.println("\n--- Rectangle Info ---");
