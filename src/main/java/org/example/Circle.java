@@ -13,7 +13,10 @@ public class Circle {
         this.filled = filled;
     }
 
-    public double getRadius() { return radius; }
+    public double getRadius() {
+        return radius;
+    }
+
     public void setRadius(double radius) {
         if (radius <= 0) {
             System.out.println("[Error] Radius must be positive. Defaulting to 1.0.");
@@ -22,11 +25,22 @@ public class Circle {
         }
         this.radius = radius;
     }
-    public boolean isFilled() { return filled; }
-    public void setFilled(boolean filled) { this.filled = filled; }
 
-    public double calculateArea() { return Math.PI * radius * radius; }
-    public double calculatePerimeter() { return 2 * Math.PI * radius; }
+    public boolean isFilled() {
+        return filled;
+    }
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
+
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+
+    public double calculatePerimeter() {
+        return 2 * Math.PI * radius;
+    }
 
     public void displayInfo() {
         System.out.println("\n--- Circle Info ---");
@@ -44,3 +58,4 @@ public class Circle {
             System.out.println("  ***  \n *   * \n*     *\n *   * \n  ***  ");
         }
     }
+}
