@@ -13,3 +13,6 @@ public class Main {
         String name = scanner.nextLine();
 
         Student student = new Student(id, name);
+
+        System.out.print("How many courses to add? ");
+        int numCourses = scanner.nextInt();
