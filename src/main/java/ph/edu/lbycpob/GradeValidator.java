@@ -9,3 +9,5 @@ public class GradeValidator {
                 return true;
             }
         }
+        return false;
+    }
