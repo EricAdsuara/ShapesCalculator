@@ -30,3 +30,12 @@ public class Main {
                     System.out.println("[Error] Invalid units. Must be > 0 and <= 12.");
                 }
             } while (!GradeValidator.isValidUnits(units));
+
+            double grade;
+            do {
+                System.out.print("Grade Point (0.0 - 4.0): ");
+                grade = scanner.nextDouble();
+                if (!GradeValidator.isValidGradePoint(grade)) {
+                    System.out.println("[Error] Invalid DLSU grade scale point.");
+                }
+            } while (!GradeValidator.isValidGradePoint(grade));
