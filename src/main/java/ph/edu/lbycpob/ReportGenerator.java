@@ -11,4 +11,11 @@ public class ReportGenerator {
         System.out.println("----------------------------------------------");
         System.out.printf("%-15s %-10s %-10s\n", "Course Code", "Units", "Grade");
         System.out.println("----------------------------------------------");
+
+        for (CourseGrade course : student.getCourses()) {
+            System.out.printf("%-15s %-10.1f %-10.1f\n",
+                    course.getCourseCode(),
+                    course.getUnits(),
+                    course.getGradePoint());
+        }
 }
