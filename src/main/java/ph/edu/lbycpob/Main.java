@@ -16,3 +16,8 @@ public class Main {
 
         System.out.print("How many courses to add? ");
         int numCourses = scanner.nextInt();
+
+        for (int i = 0; i < numCourses; i++) {
+            System.out.println("\nCourse " + (i + 1) + ":");
+            System.out.print("Course Code: ");
+            String code = scanner.next();
